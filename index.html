@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ThirumalaiVasan K N</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Adding AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Adding Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">Thiru<span>+</span></a>
+        </div>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#academics" class="nav-link">Academics</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#personal" class="nav-link">Personal</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-cloud"></i></button>
+        </nav>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+                <p class="about-text">Hi! I am</p>
+                <h1><span class="wave"><br><span class="highlight">Thirumalaivasan K N</span></h1>
+                <p class="subtitle">An aspiring leader and Engineer with a vision for success in the technological world.</p>
+                <div class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="about-text">
+                    I am an aspiring software engineer with a background in Electronics, possessing a good 
+                    level of experience in people management and strong team leadership skills. As an active 
+                    team player, I strive to deliver all-around performance in every task assigned to me. I 
+                    excel at multitasking and am currently pursuing an internship at IMPACT 25 Program by Psiog Digital.
+                </p>
+                <div class="buttons">
+                    <button id="view-cv" class="btn primary-btn">
+                        <i class="fas fa-file-pdf"></i> View CV
+                    </button>
+                    <button class="btn secondary-btn" id="contact-btn">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </button>
+                </div>
+            </div>
+            <div class="image-content" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-img-container">
+                    <img src="profile.png" alt="Profile Picture" class="profile-img">
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/thirumalaivasan-k-n-157589225" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/_n.t_1_official?igsh=MnJjeDBlOGR1c2Rz" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics" class="section-padding">
+        <h2 class="section-title" data-aos="fade-up">Academics</h2>
+        <h3><span class="wave"></span><br><span class="highlight">Educational Details</span></h3>
+        <div class="academics-container">
+            <div class="edu-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="edu-header">
+                    <i class="fas fa-school"></i> Christ The King Matric
+                </div>
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="Christ.jpg" alt="School Image">
+                    </div>
+                    <div class="card-details">
+                        <p>SSLC Percentage - <strong>93.2%</strong></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Kumbakonam</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="edu-header">
+                    <i class="fas fa-school"></i> S.R.V Matric
+                </div>
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="srv.jpg" alt="School Image">
+                    </div>
+                    <div class="card-details">
+                        <p>HSC Percentage - <strong>94.96%</strong></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Trichy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-card full-width" data-aos="zoom-in" data-aos-delay="300">
+                <div class="edu-header">
+                    <i class="fas fa-university"></i> Kumaraguru College of Technology
+                </div>
+                <div class="card-content">
+                    <div class="card-image">
+                        <img src="kct.jpg" alt="College Image">
+                    </div>
+                    <div class="card-details">
+                        <p>B.E in Electronics and Instrumentation Engineering</p>
+                        <p>C.G.P.A : <strong>8.703</strong></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Coimbatore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h2 class="section-title" data-aos="fade-up">Skills</h2>
+            
+            <div class="skills-content">
+                <h3 class="skills-subtitle" data-aos="fade-up" style="font-size: 24px; margin-bottom: 20px;">
+                    Professional Skills
+                </h3>
+                <div id="soft-skills" class="tab-content active">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">Team Leadership</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="150">Strategic Networking</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">Problem Solving</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="250">Emotional Intelligence</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">Mentorship</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="350">Team Collaboration</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">Operations Management</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="450">Dynamic Presentations</div>
+                    </div>
+                </div>
+                
+                <h3 class="skills-subtitle" data-aos="fade-up" style="font-size: 24px; margin-bottom: 20px;">
+                    Programming Expertise
+                </h3>
+                <div id="software-skills" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">C</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="150">C++</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">C#</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="250">Python</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">HTML</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="350">JavaScript</div>
+                    </div>
+                </div>
+                
+                <h3 class="skills-subtitle" data-aos="fade-up" style="font-size: 24px; margin-bottom: 20px;">
+                    Tech Stack Mastery
+                </h3>
+                <div id="technologies-known" class="tab-content">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">SQL & SSMS</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="150">Modern Frontend (React, Vite)</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">Full Stack Development</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="250">Machine Learning</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">Visual Studio & VS Code</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="350">Node.js</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="400">ASP.NET</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="450">APIs & Razor Pages</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="500">AWS (Beginner)</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="550">Firebase</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="600">Jupyter Labs</div>
+                        <div class="skill-item" data-aos="fade-up" data-aos-delay="650">Exploring UI/UX Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-padding">
+        <h2 class="section-title" data-aos="fade-up">Experience & Projects</h2>
+        
+        <div class="experience-container">
+            <div class="timeline-content">
+                <h3>Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3>IMPACT 25 Program - Psiog Digital</h3>
+                            <p>Internship focusing on software development and engineering practices.</p>
+                        </div>
+                    </div>              
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <div class="timeline-content">
+                            <h3>President - EIE Department Association</h3>
+                            <p>I am honored to serve as the President of the Electronics and Instrumentation Engineering (EIE) Department for the academic year 2024-2025. As your president, I, along with our dedicated student representatives, am committed to supporting your journey through volunteerism, mentorship, and active engagement. My own journey began like any other student’s, but I soon realized that real growth happens beyond the classroom. By volunteering and engaging with seniors, I discovered the power of networking and collaboration, which shaped my path. Despite challenges, I remained committed to leadership, resilience, and personal development.</p>
+                            
+                            <!-- Local Video -->
+                            <div class="timeline-video">
+                                <video controls width="560" height="315">
+                                    <!-- Replace the src path with your actual folder/file name -->
+                                    <source src="thirusign.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <section id="department-association" class="section-padding">
+                                <h3>Department Association</h3>
+                                
+                                <!-- Association Card -->
+                                <div class="assoc-card" data-aos="fade-up">
+                                    <div class="assoc-image-wrapper">
+                                        <img src="dept.jpg" alt="Department Association Image" />
+                                        <!-- Orange bar overlay -->
+                                        <div class="assoc-title-bar">
+                                            DA Office 2024 - 2025
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>                  
+                        </div>
+                    </div> 
+                    <section id="projects" class="section-padding">               
+                        <h2 class="section-title">Projects</h2>
+                        <!-- Project Card 1 -->
+                        <div class="project-card" data-aos="fade-up">
+                            <div class="project-image-wrapper">
+                                <img src="project2.png" alt="Climate Based Irrigation Image" />
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Climate Based Irrigation using ML Model</h3>
+                                <p class="project-description">
+                                    Automated irrigation system optimized with machine learning algorithms 
+                                    to conserve water based on weather patterns.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Project Card 2 -->
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-image-wrapper">
+                                <img src="project1.webp" alt="Poultry Automation Image" />
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Poultry Automation for False Hen Detection</h3>
+                                <p class="project-description">
+                                    Automated system for identifying non-producing hens in poultry farms 
+                                    using sensor technology.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Project Card 3 -->
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-image-wrapper">
+                                <img src="project3.jpg" alt="Industrial Carbon Filter Image" />
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Industrial Carbon Filter</h3>
+                                <p class="project-description">
+                                    Design and implementation of carbon filtration system for industrial emissions.
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Project Card 4 -->
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="project-image-wrapper">
+                                <img src="project4.jpg" alt="Silver Ions Detection Image" />
+                            </div>
+                            <div class="project-details">
+                                <h3 class="project-title">Silver Ions Detection using Turbidity Analysis</h3>
+                                <p class="project-description">
+                                    Analytical method for detecting silver ion concentration through turbidity measurements.
+                                </p>
+                            </div>
+                        </div>
+                    </section>        
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="section-padding">
+            <h2 class="section-title">Personal & Hobbies</h2>
+            
+            <!-- Simplified Hobbies (no boxes) -->
+            <div class="hobbies-container">
+                <h3 data-aos="fade-up">Cricket =</h3>
+                <h3 data-aos="fade-up" data-aos-delay="100">Cooking =</h3>
+                <h3 data-aos="fade-up" data-aos-delay="200">Music =</h3>
+                <h3 data-aos="fade-up" data-aos-delay="300">Travel</h3>
+            </div>
+            <!-- Cricket Fan Section -->
+            <section id="cricket-fan-section" data-aos="fade-up">
+                <h3 class="cricket-heading">Cricket – Fan of RohitSharma</h3>
+                
+                <div class="cricket-content">
+                    <p>
+                        I am a huge fan of Rohit Sharma, admiring both his exceptional leadership 
+                        on the field and his effortless pull shots, which I find truly remarkable.
+                    </p>
+                    <img src="crick.jpg" alt="Rohit Sharma" />
+                </div>
+            </section>
+            <!-- Foodie Me Section -->
+            <section id="foodie-me" data-aos="fade-up">
+                <h3 class="foodie-heading">Foodie Me</h3>
+                
+                <div class="foodie-content">
+                    <p>
+                        I have a passion for both cooking and eating. I enjoy preparing chicken dishes 
+                        and South Indian cuisine, with a special love for crispy, spicy flavors. Biryani 
+                        holds a special place in my heart, and I also appreciate traditional, healthy foods.
+                    </p>
+                    <img src="foodie.jpg" alt="Foodie Image" />
+                </div>
+            </section>
+            <!-- Travel Glimpse Section -->
+            <section id="travel-glimpse" class="section-padding" data-aos="fade-up">
+                <!-- Centered Heading -->
+                <h2 class="travel-title">Travel Glimpse</h2>
+                
+                <!-- Flex Container: Text + Image -->
+                <div class="travel-content" data-aos="fade-up" data-aos-delay="200">
+                    <p>
+                        I have a deep love for traveling to distant holy places and exploring natural 
+                        landscapes. I also enjoy boating and visiting historical sites, immersing 
+                        myself in their rich heritage and beauty.
+                    </p>
+                    <!-- Image with a separate animation effect -->
+                    <img 
+                        src="travel1.jpg" 
+                        alt="Travel Image" 
+                        data-aos="zoom-in" 
+                        data-aos-delay="300"
+                    />
+                </div>
+            </section>
+            <!-- Feel Good Video Section -->
+            <section id="pitchavaram" class="section-padding">
+                <!-- Black rectangle heading -->
+                <div class="video-header">
+                    <h2>Pitchavaram Mangroove Forest</h2>
+                </div>
+            
+                <!-- Responsive video container -->
+                <div class="video-card">
+                    <video controls>
+                        <!-- Update with your actual video file path -->
+                        <source src="boating.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+            <section id="my-family" class="section-padding">
+                <h2 class="family-title">My Family</h2>
+            
+                <div class="family-cards">
+                    <!-- Card 1: Parents -->
+                    <div class="family-card" data-aos="fade-up">
+                        <div class="family-heading">My Parents</div>
+                        <img src="parents.jpg" alt="My Parents" />
+                        <p>
+                            I am blessed with great parents who have shaped me into who I am today. 
+                            My father is a great inspiration, teaching me the importance of responsibility 
+                            and helping me develop essential life skills. My mother, a dedicated government 
+                            school teacher, has always taken great care of me, instilling in me good habits 
+                            and the value of cleanliness.
+                        </p>
+                    </div>
+                
+                    <!-- Card 2: Brother -->
+                    <div class="family-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="family-heading">My Brother</div>
+                        <img src="brother.jpg" alt="My Brother" />
+                        <p>
+                            My brother works in the Technical Regulations Team at Nissan, India. 
+                            He is a great motivator and supporter, always standing by my decisions 
+                            while also challenging me when necessary. His guidance has been invaluable 
+                            in helping me navigate social challenges and make better choices.
+                        </p>
+                    </div>
+                </div>
+            </section>  
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="section-padding awards-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Awards & Recognitions🏆</h2>
+                <div class="awards-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="award-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="award-image">
+                            <img src="award1.jpeg" alt="MG Scholarship Image" class="award-img">
+                        </div>
+                        <div class="award-details">
+                            <h3 class="award-title">Mahatma Gandhi Merit Scholarship</h3>
+                            <p>Awarded for outstanding academic performance among the department. I had awarded with Four MG awards.</p>
+                        </div>
+                    </div>
+                    <div class="award-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="award-image">
+                            <img src="award2.jpeg" alt="Achiever Award Image" class="award-img">
+                        </div>
+                        <div class="award-details">
+                            <h3 class="award-title">Achievers Awards - Institutional Contributor's Award</h3>
+                            <p>Recognized for significant contributions to institutional growth and community engagement.</p>
+                        </div>
+                    </div>
+                    <div class="award-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="award-image">
+                            <img src="award3.jpeg" alt="Best Outgoing Student Image" class="award-img">
+                        </div>
+                        <div class="award-details">
+                            <h3 class="award-title">Best Outgoing Student of the Department</h3>
+                            <p>Honored as the top student for leadership, academics, and departmental impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding">
+            <!-- Top black rectangle header -->
+            <div class="contact-header">
+                <h2>Contact</h2>
+            </div>
+            
+            <div class="contact-container">
+                <!-- Left column: Contact info -->
+                <div class="contact-info">
+                    
+                    <!-- Card 1: Call -->
+                    <div class="contact-card" data-aos="fade-up">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Call me</h3>
+                            <p>(+91) 7010370545</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Email -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>thirumalaivasan174@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3: Location -->
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kumbakonam, India</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Social media section under Location -->
+                    <div class="social-section" data-aos="fade-up" data-aos-delay="300">
+                        <p>Visit my Social Media :</p>
+                        <div class="social-icons">
+                            <a 
+                                href="https://www.linkedin.com/in/thirumalaivasan-k-n-157589225" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a 
+                                href="https://www.instagram.com/_n.t_1_official?igsh=MnJjeDBlOGR1c2Rz" 
+                                class="social-icon" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right column: Contact form -->
+                <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Get in Touch</h3>
+                    <form id="contact-form" class="styled-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                Copyright © 2025 /
+                <a href="https://thiru-174.github.io/My-Portfolio/" target="_blank" rel="noopener noreferrer">
+                    Thirumalaivasan.com
+                </a>
+                / KNTVASAN Management
+            </p>
+        </footer>
+        
+        <!-- Go to Top Button -->
+        <button id="back-to-top" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <!-- EmailJS SDK -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
